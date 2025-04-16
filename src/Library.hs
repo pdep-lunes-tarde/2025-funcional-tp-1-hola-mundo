@@ -4,7 +4,7 @@ import PdePreludat
 -- 1. Numeros
 
 siguiente :: Number -> Number
-siguiente = implementame
+siguiente numero = numero + 1
 
 esPositivo :: Number -> Bool
 esPositivo = implementame
