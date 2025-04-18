@@ -16,30 +16,30 @@ inversa n = 1/n
 
 -- 2. Temperaturas
 
-celsiusAFahrenheit :: Number -> Number
-celsiusAFahrenheit celsius = implementame
+gradosFahrenheit :: Number -> Number
+gradosFahrenheit celsius = celsius * 1.8 +32
 
-fahrenheitACelsius :: Number -> Number
-fahrenheitACelsius fahrenheit = implementame
+gradosCelsius :: Number -> Number
+gradosCelsius fahrenheit = (fahrenheit-32) * 1.8
 
--- escriban el tipo de esta función
-haceFrioCelsius grados = implementame
+haceFrioCelsius :: Number -> Bool
+haceFrioCelsius grados = grados<=8
 
--- escriban el tipo de esta función
-haceFrioFahrenheit grados = implementame
+haceFrioFahrenheit :: Number -> Bool
+haceFrioFahrenheit grados = (gradosFahrenheit grados)<=8
 
 -- 2.5 Bonus OPCIONAL
 perimetroCirculo :: Number -> Number
-perimetroCirculo radio = implementame
+perimetroCirculo radio = 2*radio*3.14
 
 perimetroCuadrado :: Number -> Number
-perimetroCuadrado lado = implementame
+perimetroCuadrado lado = 4*lado
 
 superficieCuadrado :: Number -> Number
-superficieCuadrado lado = implementame
+superficieCuadrado lado = lado*lado
 
 superficieCubo :: Number -> Number
-superficieCubo lado = implementame
+superficieCubo lado = 6 * superficieCuadrado lado
 
 superficieCilindro :: Number -> Number -> Number
-superficieCilindro radio altura = implementame
+superficieCilindro radio altura = 2*3.14*radio*altura + 2*3.14*radio*radio
